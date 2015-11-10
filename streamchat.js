@@ -1,6 +1,8 @@
 "use strict";
 global.co = require('co');
 global.each = require('co-each');
+global.config = require('ini').parse(require('fs').readFileSync(__dirname + '/config.ini').toString());
+
 global.debug = function() {
 	console.log(arguments);
 };

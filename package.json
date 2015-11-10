@@ -10,6 +10,7 @@
     "co": "^4.6.0",
     "co-each": "^0.1.0",
     "hitbox-chat": "^0.1.5",
+    "html-entities": "^1.2.0",
     "ini": "^1.3.4",
     "mz": "^2.1.0",
     "node-bosh-xmpp-client": "^0.1.5",
