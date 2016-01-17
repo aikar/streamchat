@@ -16,6 +16,7 @@
     "mz": "^2.1.0",
     "node-beam": "aikar/node-beam",
     "node-bosh-xmpp-client": "^0.1.5",
+    "node-xmpp-client": "^3.0.0",
     "request": "^2.65.0",
     "request-promise": "^1.0.2",
     "slate-irc": "^0.8.1",

@@ -1,3 +1,13 @@
+/*
+ * Copyright (c) (2016) Starlis LLC / Daniel Ennis (Aikar)
+ *
+ *  http://aikar.co
+ *  http://starlis.com
+ *
+ *  @license MIT
+ *
+ */
+
 "use strict";
 global.co = require('co');
 global.each = require('co-each');
