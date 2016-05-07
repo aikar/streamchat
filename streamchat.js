@@ -16,10 +16,10 @@ global.config = require('ini').parse(require('fs').readFileSync(__dirname + '/co
 global.debug = function() {
 	console.log(arguments);
 };
-require('./lib/core').register({
+global.services = require('./lib/core').register({
 	'hitbox': require("./lib/hitbox"),
 	'livecoding': require("./lib/livecoding"),
 	'twitch': require("./lib/twitch"),
 	'beam': require("./lib/beam")
 });
-
+require('./lib/httpServer');
