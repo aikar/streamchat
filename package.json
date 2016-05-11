@@ -9,6 +9,7 @@
     "babel": "^5.8.29",
     "co": "^4.6.0",
     "co-each": "^0.1.0",
+    "cookie-parser": "^1.4.1",
     "express": "^4.13.4",
     "hitbox-chat": "^0.1.5",
     "html-entities": "^1.2.0",
