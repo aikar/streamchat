@@ -17,10 +17,11 @@ $(function() {
 	setInterval(function() {
 		jQuery.ajax('/chat').done( function(data) {
 			if (last == data) {
+				$chat.animate({'scrollTop': $chat.height()});
 				return;
 			}
 			last = data;
-			$chat.html(data);
+			$chat.html(data).css('z-index', 5);
 			$chat.animate({'scrollTop': $chat.height()});
 		});
 	}, 1500);

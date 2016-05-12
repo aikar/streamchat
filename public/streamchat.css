@@ -1,4 +1,4 @@
-html, body {
+html, body, #frame {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -7,24 +7,34 @@ html, body {
 	width: 1920px;
 	height: 1080px;
 }
+#frame {
+	background-image: url(https://www.dropbox.com/s/ztyp1tdstckybl5/Coding-With-Aikar-No-Webcam.png?dl=1);
+	z-index: 10;
+}
 #streamjar {
+	background-color: transparent;
 	width: 1920px;
 	height: 1080px;
-	display: none;
 	position: absolute;
 	top: 0;
 	left: 0;
 	border: 0;
+	z-index: 1;
 }
-#chat {
+#chat_wrapper {
+	background: url(https://www.dropbox.com/s/pq37zfoghe8toq9/aikar_co_bg_wide.png?dl=1) repeat;
 	position: absolute;
-	bottom: 0;
-	right: 0;
+	top: 908px;
+	left: 1354px;
 	display: block;
-	width: 560px;
-	height: 170px;
+	width: 566px;
+	height: 172px;
+	border-radius: 8px 0 0;
 	overflow: hidden;
 	z-index: 5 !important;
+}
+#chat {
+	margin: 3px;
 }
 .chat-row {
 	line-height: 21px;
