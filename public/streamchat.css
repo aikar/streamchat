@@ -20,7 +20,7 @@ html, body, #frame {
 	top: 0;
 	left: 0;
 	border: 0;
-	z-index: 1;
+	z-index: -10;
 }
 #chat_wrapper {
 	background: url(https://www.dropbox.com/s/pq37zfoghe8toq9/aikar_co_bg_wide.png?dl=1) repeat;
@@ -44,6 +44,7 @@ html, body, #frame {
 	left: 5px;
 	height: 84px;
 	display: none;
+	z-index: 10;
 	background-color: #219161;
 }
 #song-art {

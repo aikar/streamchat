@@ -12,7 +12,7 @@
 $(function() {
 	var streamjar = getCookie('streamjar');
 	if (streamjar) {
-		$('#streamjar').attr('src', streamjar).show();
+		$('#streamjar').attr('src', streamjar).css('z-index', -10000);
 	}
 	var $chat = $('#chat');
 	var $chatWrapper = $('#chat_wrapper');
@@ -29,7 +29,7 @@ $(function() {
 		}
 		lastChat = data;
 		var htmlChat = data
-			.map( (e) => `<div class="chat-row">${e}</div>`)
+			.map( function (e) { return '<div class="chat-row">' + e + '</div>'; })
 			.join("\n").replace(/\d+(,\d+)?/g, '');
 		$chat.html(htmlChat);
 		$chatWrapper.animate({'scrollTop': $chatWrapper.height()});
@@ -47,7 +47,7 @@ $(function() {
 		$songTitle.text(data.song);
 		$song.fadeIn(500);
 		clearTimeout(curSongTimeout);
-		curSongTimeout = setTimeout( () => $song.fadeOut(500), 4000);
+		curSongTimeout = setTimeout( function () { $song.fadeOut(500) }, 4000);
 	}
 
 	setInterval(function() {
@@ -57,6 +57,7 @@ $(function() {
 		});
 	}, 1500);
 });
+
 
 function getCookie(name, def) {
 	if (!name) { return def; }
