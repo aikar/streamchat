@@ -22,4 +22,6 @@ global.services = require('./lib/core').register({
 	'twitch': require("./lib/twitch"),
 	'beam': require("./lib/beam")
 });
+
+require('./lib/spotify');
 require('./lib/httpServer');
