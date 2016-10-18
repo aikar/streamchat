@@ -23,5 +23,5 @@ global.services = require('./lib/core').register({
 	'beam': require("./lib/beam")
 });
 
-require('./lib/spotify');
+require('./lib/music');
 require('./lib/httpServer');
