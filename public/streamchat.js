@@ -65,13 +65,27 @@ $(function() {
 		clearTimeout(mumbleTimeout);
 		mumbleTimeout = setTimeout( function () { $mumble.fadeOut(500) }, 15000);
 	}
+	var $discord = $('#discord');
+	var discordTimeout;
+	var lastdiscord = 0;
+	function showDiscord() {
+		if (Date.now() - lastdiscord < 1000 * 60 * 5) {
+			return;
+		}
+		lastdiscord = Date.now();
+		$discord.fadeIn(500);
+		clearTimeout(discordTimeout);
+		discordTimeout = setTimeout( function () { $discord.fadeOut(500) }, 15000);
+	}
 
 
 	setInterval(function() {
 		jQuery.getJSON('/data').done( function(data) {
 			updateChat(data.chat);
 			updateMusic(data.song);
-			if (data.mumble) {
+			if (data.discord) {
+				showDiscord();
+			} else if (data.mumble) {
 				showMumble();
 			}
 		});

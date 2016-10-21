@@ -10,6 +10,8 @@
     "co": "^4.6.0",
     "co-each": "^0.1.0",
     "cookie-parser": "^1.4.1",
+    "discord-webhooks": "^1.0.0",
+    "discord.io": "^2.2.4",
     "express": "^4.13.4",
     "hitbox-chat": "^0.1.5",
     "html-entities": "^1.2.0",

@@ -37,7 +37,7 @@ html, body, #frame {
 #chat {
 	margin: 3px;
 }
-#song,#mumble {
+#song,#mumble,#discord {
 	width: 720px;
 	position: absolute;
 	top: 5px;
@@ -49,23 +49,41 @@ html, body, #frame {
 	border: 3px solid black;
 	box-shadow: 0 0 5px #aaa;
 }
-#mumble {
+
+#mumble, #discord {
 	left: 1385px;
 	height: 50px;
 	width: 500px;
 }
-#mumble > div, #mumble > img {
+#discord > div, #mumble > div, #mumble > img, #discord > img {
 	float: left;
 }
-#mumble p {
+#discord p, #mumble p {
 	font-size: 20px;
 	padding-top: 10px;
 	text-align: center;
 	margin: 0 0 0 10px;
 }
+#discord p {
+	position: inherit;
+	width: 400px;
+	left: 0;
+}
 #mumble #mumble-icon {
 	width: 50px;
 	height: 50px;
+}
+#discord #discord-icon {
+	width: 75px;
+	height: 75px;
+}
+#discord {
+	background-color: #fff;
+	height: 75px;
+	border-color: #7289da;
+}
+#discord a, #discord a:visited, #discord a:default, #discord a:focus {
+	color: #7289da;
 }
 #song .wrapper {
 	float: left;
@@ -73,7 +91,7 @@ html, body, #frame {
 	width: 585px;
 }
 #song span.label {
-	display: inline-block;;
+	display: inline-block;
 	width: 55px;
 }
 #song span, #song p {

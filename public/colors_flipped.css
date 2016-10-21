@@ -7,7 +7,9 @@
  *  @license MIT
  *  
  */
-
+#discord a, #discord a:visited, #discord a:default, #discord a:focus {
+	color: #8D7625 !important;
+}
 .color-main-chat { color: #a6e4fc !important; }
 
 .color-beam { color: #ff9966 !important; }

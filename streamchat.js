@@ -20,7 +20,8 @@ global.services = require('./lib/core').register({
 	'hitbox': require("./lib/hitbox"),
 	'livecoding': require("./lib/livecoding"),
 	'twitch': require("./lib/twitch"),
-	'beam': require("./lib/beam")
+	'beam': require("./lib/beam"),
+	'discord': require('./lib/discord')
 });
 
 require('./lib/music');
