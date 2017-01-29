@@ -1,4 +1,6 @@
 # Streamchat
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/aikar/streamchat.svg)](https://greenkeeper.io/)
 Aikar's stream chat bridge.
 I use NGINX RTMP module to split a single output Live Stream and relay it to many services:
 [Stream Relay Config File](https://gist.github.com/aikar/937ae21ad9bc9600269cfbb4a1b1e96f)
