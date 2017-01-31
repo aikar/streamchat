@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="run" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="/usr/bin/node" path-to-js-file="streamchat.js" working-dir="$PROJECT_DIR$">
+  <configuration default="false" name="run" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="/usr/bin/node" path-to-js-file="$PROJECT_DIR$/streamchat-entry.js" working-dir="$PROJECT_DIR$">
     <envs>
       <env name="DEBUG" value="streamchat:*" />
     </envs>
