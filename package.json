@@ -15,7 +15,7 @@
     "co-each": "^0.1.0",
     "cookie-parser": "^1.4.3",
     "discord-webhooks": "^1.0.0",
-    "discord.io": "^2.3.0",
+    "discord.io": "^2.4.2",
     "express": "^4.14.0",
     "hitbox-chat": "^0.1.5",
     "html-entities": "^1.2.0",
