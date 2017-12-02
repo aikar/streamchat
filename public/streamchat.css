@@ -8,7 +8,7 @@ html, body, #frame {
 	height: 1080px;
 }
 #frame {
-	background-image: url(https://www.dropbox.com/s/ztyp1tdstckybl5/Coding-With-Aikar-No-Webcam.png?dl=1);
+	background-image: url(frame.png);
 	z-index: 10;
 }
 
@@ -23,7 +23,7 @@ html, body, #frame {
 	z-index: -10;
 }
 #chat_wrapper {
-	background: url(https://www.dropbox.com/s/pq37zfoghe8toq9/aikar_co_bg_wide.png?dl=1) repeat;
+	background: url(chat_bg.png) repeat;
 	position: absolute;
 	top: 908px;
 	left: 1354px;

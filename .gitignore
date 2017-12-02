@@ -1,4 +1,7 @@
 node_modules
+auto_sync.xml
+youtrack_token
+yarn-error.log
 config.ini
 .idea/workspace.xml
 .idea/dictionaries
