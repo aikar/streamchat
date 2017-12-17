@@ -7,7 +7,7 @@
  *  @license MIT
  *
  */
-
+require('log4js').level = 'ERROR';
 const path = require('path');
 require("babel-register")({
 	only: path.join(__dirname, "lib"),
